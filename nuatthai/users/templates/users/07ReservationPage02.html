@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+        <div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
+        <p class="header-1">BOOK YOUR SLOT NOW!!</p>
+        </div>
+        <div id="container-3">
+            <div id="column1">
+                    <div class="formpersonalinfo">
+                        <label for="Date">DATE: </label><br>
+                        <INPUt:date></INPUt:date>
+                    </div>
+                    <div class="formpersonalinfo">
+                            <label for="Time">TIME: </label><br>
+                    <INPUT:time></INPUT:time>
+                    </div>
+                    <div class="formpersonalinfo">
+                        <label for="Therapist">Select Therapist: </label> <select name="" id=""></select>
+                    </div>
+                    <div class="specialinstruction">
+                            <label for="Special Instruction">Special Instruction: </label><br>
+                            <input type="text" name="" id="">
+                    </div>
+
+                    <button onclick="window.location.href = 'C:\nuatthai\nuatthai\users\templates\users\06ReservatinoPage01.html';" class="generalbutton">BACK</button>
+                    <button onclick="window.location.href = 'C:\nuatthai\nuatthai\users\templates\users\08SummaryPage.html';" class="generalbutton">CONFIRM</button>
+
+            </div>
+            <div id="column2">
+                        <button onclick="window.location.href = 'C:\nuatthai\nuatthai\users\templates\users\10EditAccount.html';" class="generalbutton">EDIT ACCOUNT</button><br>
+                        <button onclick="window.location.href = 'C:\nuatthai\nuatthai\users\templates\users\01CustHomePage.html';" class="generalbutton">LOGOUT</button><br>
+                        <button onclick="window.location.href = 'C:\nuatthai\nuatthai\users\templates\users\05ReservationSearchPage.html';" class="generalbutton">SEARCH RESERVATION</button>
+            </div>
+
+
+
+        </div>
+
+     <div class="footer"><p>Nuat Thai Dev Team @2019</p></div>
+{% endblock content %}
