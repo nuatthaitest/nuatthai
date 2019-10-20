@@ -1,0 +1,80 @@
+{% extends "base.html" %} {% load crispy_forms_tags %} {% block content %}
+
+<!--<div class="content-section">
+         <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Personal Information</legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+            </small>
+        </div>
+    </div> -->
+
+<div id="container-2">
+    <h5 class="header-main"> ONLINE MASSAGE RESERVATION </h5>
+</div>
+<div id="container-3">
+    <form action="" id="">
+
+
+        <div id="columnpersonalinfo1">
+            <p class="formpersonalinfotitle">Personal Information</p>
+
+            <div class="formpersonalinfo">
+                <label for="FirstName">First Name: </label><br>{{ form.first_name }}
+            </div>
+            <div class="formpersonalinfo">
+                <label for="LastName">Last Name: </label><br>{{ form.last_name }}
+                <!-- <input type="text" name="" id=""> -->
+            </div>
+            <div class="formpersonalinfo">
+                <label for="Birthday">Birthday: </label><br>{{ form.birthday }}
+                <!-- <input type="text" name="" id=""> -->
+            </div>
+            <div class="formpersonalinfo">
+                <label for="EmailAddress">Email Address: (required)</label><br>{{ form.email }}
+                <!-- <input type="email" name="" id=""> -->
+            </div>
+            <div class="formpersonalinfo">
+                <label for="MobileNumber">Mobile Number: (required)</label><br>{{ form.mobile }}
+                <!-- <input type="integer" name="" id=""> -->
+            </div>
+            <div class="formpersonalinfo">
+                <label for="Password">Password: (required)</label><br>{{ form.password1 }}
+                <!-- <input type="password" name="" id=""> -->
+            </div>
+            <div class="formpersonalinfo">
+                <label for="Password">Confirm Password: (required)</label><br>{{ form.password2 }}
+                <!-- <input type="password" name="" id=""> -->
+            </div>
+            <div class="formpersonalinfo">
+                <label for="Gender">Gender: </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="Female">Female</label>
+                <input type="checkbox" name="" id="">
+                <label for="Male"> Male</label>
+            </div>
+            <div class="formpersonalinfo">
+                <label for="CityMunicipality">City/Municipality: </label><br>
+                <input type="text" name="" id="">
+            </div>
+
+        </div>
+    </form>
+
+    <div id="column2">
+        <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\01CustHomePage.html';" class="generalbutton" ">BACK TO HOME</button><br>
+                    <button onclick="window.location.href='' ; " class="generalbutton "">CREATE ACCOUNT</button><br>
+        <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\04LoginPage.html';" class="generalbutton" ">SIGN IN</button>
+                </div>
+
+        </div>
+{% endblock content %}

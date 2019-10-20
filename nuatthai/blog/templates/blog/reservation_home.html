@@ -1,17 +1,15 @@
-{% extends "base.html" %}
-{% block content %}
-    <div id="container-2">
-        <h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
+{% extends "base.html" %} {% block content %}
+<div id="container-2">
+    <h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
 
-    </div>
+</div>
 
 
-    <div id="container-3">
+<div id="container-3">
 
-    <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\03CreateAccountPage.html';" class="buttoncreateaccount">CREATE <br> ACCOUNT</button>
+    <button onclick="window.location.href = '{% url 'register' %}';" class="buttoncreateaccount">CREATE <br> ACCOUNT</button>
     <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\04LoginPage.html';" class="buttonlogin">LOGIN</button>
     <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\01CustHomePage.html';" class="buttonhome">HOME</button>
 
-
-    </div>
+</div>
 {% endblock content %}
