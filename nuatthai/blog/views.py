@@ -16,6 +16,9 @@ def home(request):
     }
     return render(request, 'blog/home.html', context)
 
+def reservation_home(request):
+    return render(request, 'blog/reservation_home.html', {'title': 'About'})
+
 
 class PostListView(ListView):
     model = Post
@@ -62,6 +65,3 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         return False
 
-
-def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
