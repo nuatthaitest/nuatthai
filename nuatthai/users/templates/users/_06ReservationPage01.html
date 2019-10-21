@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+        <div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
+        <p class="header-1">BOOK YOUR SLOT NOW!!</p>
+       </div>
+        <div id="container-3">
+            <div id="column3">
+                    <div class=""><h3>Massage Type:</h3>
+                        {% for s in  service %}
+                                <label for="{{ s.id_for_label }}">
+                                        {{ radio.choice_label }}
+                                        <span class="radio">{{ radio.tag }}</span>
+                                </label>
+                        {% endfor %}
+                            {% comment %} <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Nuat Thai Foot Massage(1hour) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Thai Body massage w/ Oil(1hour) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Sweddish Massage(1hour) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Armoatherapy Massage(1hour) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Express - Back and Head(30 mins) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Foot Massage(30 mins) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Back Massage(30 mins) </label><br>
+                            <input type="radio" name="" id="Nuat Thai Foot Massage"> <label for=""> Head massage(30 mins) </label> {% endcomment %}
+                        </div>
+
+            </div>
+
+            <div id="column4">
+                    <div class=""><h3>Price</h3>
+                        P350 <br>
+                        P350 <br>
+                        P400 <br>
+                        P400 <br>
+                        P250 <br>
+                        P250 <br>
+                        P250 <br>
+                        P250 <br><br>
+                        <label for="TotalAmount">Total Amount: </label><br>
+                        <input type="TotalAmount" name="" id="">
+                    </div>
+
+
+                    <button onclick="window.location.href = '{% url '_07ReservationPage02' %}';" class="generalbutton">NEXT</button>
+
+            </div>
+
+            <div id="column2">
+                    <button onclick="window.location.href = '{% url '_10EditAccount' %}';" class="generalbutton">EDIT ACCOUNT</button><br>
+                    <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton">LOGOUT</button><br>
+                    <button onclick="window.location.href = '{% url '_05ReservationSearchPage' %}';" class="generalbutton">SEARCH RESERVATION</button>
+            </div>
+
+
+
+        </div>
+
+
+
+{% endblock content %}

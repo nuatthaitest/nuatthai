@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5></div>
+        <div id="container-3">
+                <form action="" id="">
+                    <div id="columnpersonalinfo1"><p class="formpersonalinfotitle">Edit Information</p>
+                        <div class="formpersonalinfo">
+                            <label for="FirstName">First Name: </label><br>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="LastName">Last Name: </label><br>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="Birthday">Birthday: </label><br>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="EmailAddress">Email Address: </label><br>
+                            <input type="email" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="MobileNumber">Mobile Number: </label><br>
+                            <input type="integer" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="Password">Password: </label><br>
+                            <input type="password" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="Password">Confirm Password: </label><br>
+                            <input type="password" name="" id="">
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="Gender">Gender: </label><br>
+                            <input type="checkbox" name="" id="">
+                            <label for="Female">Female</label>
+                            <input type="checkbox" name="" id="">
+                            <label for="Male"> Male</label>
+                        </div>
+                        <div class="formpersonalinfo">
+                            <label for="CityMunicipality">City/Municipality: </label><br>
+                            <input type="text" name="" id="">
+                        </div>
+                    
+                    </div>          
+                </form>
+
+                    <div id="column2">
+                            <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton">LOGOUT</button><br>
+                            <button onclick="window.location.href = '{% url '_05ReservationSearchPage' %}';" class="generalbutton">SEARCH RESERVATION</button>
+                            <button onclick="window.location.href = '{% url '_06ReservationPage01' %}';" class="generalbutton">NEW RESERVATION</button>
+                    </div>
+
+            </div>
+
+
+                
+        
+
+
+                
+{% endblock content %}
+

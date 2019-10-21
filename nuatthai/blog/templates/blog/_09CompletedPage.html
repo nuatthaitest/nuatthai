@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
+        </div>
+        <div id="container-3">
+            <div class="header-1">
+                <p>
+                    Thank you for Completing your Reservation! <br><br>
+
+                    Kindly present <br>
+                    your customer Reference Number <br>
+                    and pay upon arrival :) <br><br>
+
+                    Reference Number: <br><br><br><br>
+
+                    You may check your email for the copy of your Reference Number.
+                </p>
+            </div>
+            <div id="column2">
+                    <button onclick="window.location.href = '{% url '_10EditAccount' %}';" class="generalbutton">EDIT ACCOUNT</button><br>
+                    <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton">LOGOUT</button><br>
+                    <button onclick="window.location.href = '{% url '_05ReservationSearchPage' %}';" class="generalbutton">SEARCH RESERVATION</button><br>
+                    <button onclick="window.location.href = '{% url '_06ReservationPage01' %}';" class="generalbutton">NEW RESERVATION</button>
+                </div>
+
+
+
+        </div>
+
+
+
+{% endblock content %}

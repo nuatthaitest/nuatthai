@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="container-1">
+
+	<div class="box-homeleft"><br><br><br><br>
+		<p class="h1">NUAT THAI</p>
+		<p class="h5">FOOT AND BODY MASSAGE</p><br><br>
+		<p><a href="'{% url '_11AdminStaffHomePage' %}';" class="h3">HOME</a></p>
+		<p><a href="'{% url '_12StaffHomePage' %}';" class="h3">STAFF</a></p>
+		<p><a href="'{% url '_13AdminLogInPage' %}';" class="h3">ADMINISTRATOR</a></p>
+	</div>
+
+
+	<div class="box-adminstaff">
+			<div>
+					<h5 class="header-adminstaff">MASSAGE RESERVATION LIST</h5>
+			</div>
+
+			<div id="columnadminstaff">
+                    <div class="formpersonalinfo">
+                        <label for="ReferenceID">Reference Number: </label><br>
+                        <input type="ReferenceID" name="" id="">
+                    </div><br>
+                    <div class="">
+                        DATE <br>
+                        TIME <br>
+						CUSTOMER NAME <br>
+						MASSAGE TYPE <br>
+						THERAPIST <br>
+						SPECIAL INSTRUCTIONS <br>
+                    </div><br>
+                    <button onclick="window.location.href = '';" class="generalbutton">ACCEPT</button>
+                    <button onclick="window.location.href = '';" class="generalbutton">CANCEL</button>
+            </div>
+			<button onclick="window.location.href = '';" class="generalbutton">DOWNLOAD SCHEDULE</button><br>
+			<button onclick="window.location.href = '';" class="generalbutton">UPLOAD SCHEDULE</button><br>
+	</div>
+
+
+
+</div> 
+
+
+
+
+{% endblock content %}

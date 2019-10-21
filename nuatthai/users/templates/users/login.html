@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% load crispy_forms_tags %} {% block content %}
-<div class="content-section">
+<!-- <div class="content-section">
     <form method="POST">
         {% csrf_token %}
         <fieldset class="form-group">
@@ -15,5 +15,38 @@
                 Need An Account? <a class="ml-2" href="{% url 'register' %}">Sign Up Now</a>
         </small>
     </div>
-</div>
+</div> -->
+
+
+<div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5></div>
+<div id="container-3">
+    <div id="column1">
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="formpersonalinfo">
+                <label for="EmailAddress">Email Address: </label><br> 
+                {{ form.username }}
+            </div>
+
+            <div class="formpersonalinfo">
+                <label for="Password">Password: </label><br> 
+                {{ form.password }}
+                
+            </div>
+<button class="generalbutton" type="submit">LOGIN</button>
+        </form>
+
+            <div>
+                <h5><a href="{% url 'password_reset' %}" class="h3">Forgot Password</a></h5>
+            </div>
+    </div>
+
+        <div id="column2">
+            
+            <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton">BACK TO HOME</button><br>
+            <button onclick="window.location.href = '{% url 'register' %}';" class="generalbutton">CREATE NEW ACCOUNT</button><br>
+        </div>
+
+    </div>
 {% endblock content %}

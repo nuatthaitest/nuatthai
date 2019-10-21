@@ -16,6 +16,27 @@ def register(request):
     return render(request, 'users/register.html', {'form': form})
 
 
+def _06ReservationPage01(request):
+
+    queryset = Product.objects.all()
+    context = {
+        'services': queryset
+    }
+    return render(request, 'users/_06ReservationPage01.html',context)
+
+def _07ReservationPage02(request):
+    return render(request, 'users/_07ReservationPage02.html')
+
+def _10EditAccount(request):
+    return render(request, 'users/_10EditAccount.html')
+
+def _13AdminLogInPage(request):
+    return render(request, 'users/_13AdminLogInPage.html')
+
+def _14AdminMainPage(request):
+    return render(request, 'users/_14AdminMainPage.html')
+    
+
 @login_required
 def profile(request):
     if request.method == 'POST':

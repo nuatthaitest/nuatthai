@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="container-1">
+
+	<div class="box-homeleft"><br><br><br><br>
+		<p class="h1">NUAT THAI</p>
+		<p class="h5">FOOT AND BODY MASSAGE</p><br><br>
+		<p><a href="'{% url '_11AdminStaffHomePage' %}';" class="h3">HOME</a></p>
+		<p><a href="'{% url '_12StaffHomePage' %}';" class="h3">STAFF</a></p>
+		<p><a href="'{% url '_13AdminLogInPage' %}';" class="h3">ADMINISTRATOR</a></p>
+	</div>
+
+
+	<div class="box-adminstaff">
+			<div>
+					<h5 class="header-adminstaff">MASSAGE RESERVATION LIST</h5>
+			</div>
+		<button onclick="window.location.href = '';" class="generalbutton">DOWNLOAD AND VIEW SCHEDULE</button><br>
+	</div>
+
+
+
+</div> 
+
+
+{% endblock content %}

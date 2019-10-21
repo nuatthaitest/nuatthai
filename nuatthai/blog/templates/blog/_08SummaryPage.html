@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
+        <p class="header-2">SUMMARY OF RESERVATION</p>
+        </div>
+        <div id="container-3">
+            <div id="column1">
+                    <div class="formpersonalinfo">
+                            <label for="MassageType">Massage Type: </label><br>
+                            <input type="email" name="" id="">
+                    </div>
+                    <div class="formpersonalinfo">
+                        <label for="Date">DATE: </label><br>
+                        <INPUt:date></INPUt:date>
+                    </div>
+                    <div class="formpersonalinfo">
+                            <label for="Time">TIME: </label><br>
+                    <INPUT:time></INPUT:time>
+                    </div>
+                    <div class="formpersonalinfo">
+                        <label for="Therapist">Therapist: </label> <select name="" id=""></select>
+                    </div><br>
+                    <div class="specialinstruction">
+                            <label for="Special Instruction">Special Instruction: </label><br>
+                            <input type="text" name="" id="">
+                    </div><br>
+                    <div class="formpersonalinfo">
+                        <label for="TotalAmount">Total Amount: </label><br>
+                        <input type="TotalAmount" name="" id="">
+                    </div>
+                    <button onclick="window.location.href = '{% url '_07ReservationPage02' %}';" class="generalbutton">BACK</button>
+                    <button onclick="window.location.href = '{% url '_09CompletedPage' %}';" class="generalbutton">COMPLETE</button>
+
+            </div>
+            <div id="column2">
+                        <button onclick="window.location.href = '{% url '_10EditAccount' %}';" class="generalbutton">EDIT ACCOUNT</button><br>
+                        <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton">LOGOUT</button><br>
+                        <button onclick="window.location.href = '{% url '_05ReservationSearchPage' %}';" class="generalbutton">SEARCH RESERVATION</button>
+            </div>
+
+
+
+        </div>
+
+
+{% endblock content %}

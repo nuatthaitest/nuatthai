@@ -22,22 +22,27 @@
     <h5 class="header-main"> ONLINE MASSAGE RESERVATION </h5>
 </div>
 <div id="container-3">
-    <form action="" id="">
 
-
+<form method="POST">
+            {% csrf_token %}
         <div id="columnpersonalinfo1">
             <p class="formpersonalinfotitle">Personal Information</p>
 
             <div class="formpersonalinfo">
                 <label for="FirstName">First Name: </label><br>{{ form.first_name }}
+                
             </div>
-            <div class="formpersonalinfo">
+             <div class="formpersonalinfo">
                 <label for="LastName">Last Name: </label><br>{{ form.last_name }}
                 <!-- <input type="text" name="" id=""> -->
             </div>
             <div class="formpersonalinfo">
                 <label for="Birthday">Birthday: </label><br>{{ form.birthday }}
                 <!-- <input type="text" name="" id=""> -->
+            </div>
+                <div class="formpersonalinfo">
+                <label for="Username">Username: (required)</label><br>{{ form.username }}
+                <!-- <input type="email" name="" id=""> -->
             </div>
             <div class="formpersonalinfo">
                 <label for="EmailAddress">Email Address: (required)</label><br>{{ form.email }}
@@ -65,16 +70,16 @@
             <div class="formpersonalinfo">
                 <label for="CityMunicipality">City/Municipality: </label><br>
                 <input type="text" name="" id="">
-            </div>
-
+            </div> 
+                    <button  class="generalbutton " type="submit">SUBMIT</button>
+</form>
         </div>
-    </form>
 
     <div id="column2">
-        <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\01CustHomePage.html';" class="generalbutton" ">BACK TO HOME</button><br>
-                    <button onclick="window.location.href='' ; " class="generalbutton "">CREATE ACCOUNT</button><br>
-        <button onclick="window.location.href = 'C:\nuatthai\NuatThai.Customer\04LoginPage.html';" class="generalbutton" ">SIGN IN</button>
-                </div>
+        <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton" >BACK TO HOME</button><br>
+        <button onclick="window.location.href = '{% url 'login' %}';" class="generalbutton" >SIGN IN</button><br>
 
+                </div>
         </div>
+
 {% endblock content %}

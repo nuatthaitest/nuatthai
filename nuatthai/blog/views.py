@@ -16,8 +16,35 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
+
 def reservation_home(request):
-    return render(request, 'blog/reservation_home.html', {'title': 'About'})
+    context = {
+        'service': 'service'
+    }
+    return render(request, 'blog/reservation_home.html', context)
+
+def login(request):
+    return render(request, 'users/login.html')
+
+def _05ReservationSearchPage(request):
+    return render(request, 'blog/_05ReservationSearchPage.html')
+
+    
+
+def _08SummaryPage(request):
+    return render(request, 'blog/_08SummaryPage.html')
+
+def _09CompletedPage(request):
+    return render(request, 'blog/_09CompletedPage.html')
+
+def _11AdminStaffHomePage(request):
+    return render(request, 'blog/_11AdminStaffHomePage.html')
+
+def _12StaffHomePage(request):
+    return render(request, 'blog/_12StaffHomePage.html')
+
+
+
 
 class PostListView(ListView):
     model = Post

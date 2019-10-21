@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <div id="container-2"><h5 class="header-main"> ONLINE MASSAGE RESERVATION</h5>
+        <p class="header-1">BOOK YOUR SLOT NOW!!</p>
+        </div>
+        <div id="container-3">
+            <div id="column1">
+                    <div class="formpersonalinfo">
+                        <label for="Date">DATE: </label><br>
+                        <INPUt:date></INPUt:date>
+                    </div>
+                    <div class="formpersonalinfo">
+                            <label for="Time">TIME: </label><br>
+                    <INPUT:time></INPUT:time>
+                    </div>
+                    <div class="formpersonalinfo">
+                        <label for="Therapist">Select Therapist: </label> <select name="" id=""></select>
+                    </div>
+                    <div class="specialinstruction">
+                            <label for="Special Instruction">Special Instruction: </label><br>
+                            <input type="text" name="" id="">
+                    </div>
+
+                    <button onclick="window.location.href = '{% url '_06ReservationPage01' %}';" class="generalbutton">BACK</button>
+                    <button onclick="window.location.href = '{% url '_08SummaryPage' %}';" class="generalbutton">CONFIRM</button>
+
+            </div>
+            <div id="column2">
+                        <button onclick="window.location.href = '{% url '_10EditAccount' %}';" class="generalbutton">EDIT ACCOUNT</button><br>
+                        <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton">LOGOUT</button><br>
+                        <button onclick="window.location.href = '{% url '_05ReservationSearchPage' %}';" class="generalbutton">SEARCH RESERVATION</button>
+            </div>
+
+
+
+        </div>
+
+
+
+{% endblock content %}
