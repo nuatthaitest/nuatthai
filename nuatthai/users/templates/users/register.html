@@ -21,6 +21,7 @@
 <div id="container-2">
     <h5 class="header-main"> ONLINE MASSAGE RESERVATION </h5>
 </div>
+
 <div id="container-3">
 
 <form method="POST">
@@ -30,56 +31,64 @@
 
             <div class="formpersonalinfo">
                 <label for="FirstName">First Name: </label><br>{{ form.first_name }}
-                
             </div>
+
              <div class="formpersonalinfo">
                 <label for="LastName">Last Name: </label><br>{{ form.last_name }}
                 <!-- <input type="text" name="" id=""> -->
             </div>
+
             <div class="formpersonalinfo">
                 <label for="Birthday">Birthday: </label><br>{{ form.birthday }}
                 <!-- <input type="text" name="" id=""> -->
             </div>
-                <div class="formpersonalinfo">
+
+            <div class="formpersonalinfo">
                 <label for="Username">Username: (required)</label><br>{{ form.username }}
                 <!-- <input type="email" name="" id=""> -->
             </div>
+
             <div class="formpersonalinfo">
                 <label for="EmailAddress">Email Address: (required)</label><br>{{ form.email }}
                 <!-- <input type="email" name="" id=""> -->
             </div>
+
             <div class="formpersonalinfo">
-                <label for="MobileNumber">Mobile Number: (required)</label><br>{{ form.mobile }}
+                <label for="MobileNumber">Mobile Number: (required)</label><br>{{ form.mobile }}<br>
                 <!-- <input type="integer" name="" id=""> -->
             </div>
-            <div class="formpersonalinfo">
-                <label for="Password">Password: (required)</label><br>{{ form.password1 }}
+
+            <div class="formpassword">
+                <label for="Password">Password:(required)</label>{{ form.password1 }}
                 <!-- <input type="password" name="" id=""> -->
             </div>
-            <div class="formpersonalinfo">
-                <label for="Password">Confirm Password: (required)</label><br>{{ form.password2 }}
+
+            <div class="formpassword">
+                <label for="Password">Retype Password:(required)</label>{{ form.password2 }}
                 <!-- <input type="password" name="" id=""> -->
             </div>
+
             <div class="formpersonalinfo">
                 <label for="Gender">Gender: </label><br>
                 <input type="checkbox" name="" id="">
                 <label for="Female">Female</label>
                 <input type="checkbox" name="" id="">
-                <label for="Male"> Male</label>
+                <label for="Male"> Male</label><br>
+
             </div>
-            <div class="formpersonalinfo">
-                <label for="CityMunicipality">City/Municipality: </label><br>
-                <input type="text" name="" id="">
-            </div> 
-                    <button  class="generalbutton " type="submit">SUBMIT</button>
+            <div><button  class="generalbutton " type="submit">SUBMIT</button></div>
+
+
+</div>
 </form>
-        </div>
+  
 
     <div id="column2">
         <button onclick="window.location.href = '{% url 'home' %}';" class="generalbutton" >BACK TO HOME</button><br>
         <button onclick="window.location.href = '{% url 'login' %}';" class="generalbutton" >SIGN IN</button><br>
+    </div>
 
-                </div>
-        </div>
+
+</div>
 
 {% endblock content %}

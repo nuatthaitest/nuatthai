@@ -251,6 +251,7 @@
     width: 500px;
 }
 
+
 #column1 {
     font-family: 'Courier New', Courier, monospace;
     color: #FFFFFF;
@@ -321,6 +322,16 @@
 
 .formpersonalinfo input {
     width: 80%;
+    padding: 8px;
+    border: #DCDCDC solid 1px;
+}
+
+.formpassword {
+    margin-top: 10px;
+}
+
+.formpassword input {
+    width: 25%;
     padding: 8px;
     border: #DCDCDC solid 1px;
 }

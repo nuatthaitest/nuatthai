@@ -18,10 +18,11 @@ def register(request):
 
 def _06ReservationPage01(request):
 
-    queryset = Product.objects.all()
-    context = {
-        'services': queryset
-    }
+queryset = Product.objects.all()
+   context = {
+     'services': queryset
+   }
+
     return render(request, 'users/_06ReservationPage01.html',context)
 
 def _07ReservationPage02(request):
