@@ -26,7 +26,7 @@ SECRET_KEY = '3plsygn$(8&gr7!wjo59q5la+l@+czwj)oo(95kt0y9q58fnlj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nuatthaitest.herokuapp.com']
+ALLOWED_HOSTS = ['nuatthai.herokuapp.com']
 
 
 # Application definition
