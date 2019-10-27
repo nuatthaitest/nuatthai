@@ -1,4 +1,5 @@
-#!/Users/MC/master/env/bin/python3
+#!/home/charles/https:/github.com/nuatthaitest/nuatthai/env/bin/python
+
 # -*- coding: utf-8 -*-
 import re
 import sys
